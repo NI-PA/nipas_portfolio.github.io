@@ -66,7 +66,7 @@
                     }) : this.fixTitle()
                 }, n.prototype.getDefaults = function () {
                     return n.DEFAULTS
-                }, n.prototype.getOptions = function (e) {
+                }, n.prototype.getOptions=function (e) {
                     return e = t.extend({}, this.getDefaults(), this.$element.data(), e), e.delay && "number" == typeof e.delay && (e.delay = {
                         show: e.delay,
                         hide: e.delay
