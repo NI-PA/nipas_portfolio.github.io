@@ -56,8 +56,8 @@ def store_csv(data,):
         email = data['email']
         subject = data['subject']
         message = data['message']
-        # csv_writer = csv.writer(database, dialect='excel', **fmtparams ,delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        csv_writer = csv.writer(database, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        # csv_writer =csv.writer(database, dialect='excel', **fmtparams ,delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        csv_writer=csv.writer(database, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         csv_writer.writerow([email, subject, message])
 
 
